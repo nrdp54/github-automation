@@ -1,13 +1,12 @@
 name: run-main
 run-name: run-main
-on: workflow_dispatch
-  
-  # push:
-  #   branches:
-  #     - main
-  # schedule:
-  #   # every day at midnight
-  #   - cron: 0 0 * * *
+on:  
+  push:
+    branches:
+      - main
+  schedule:
+    # every day at midnight
+    - cron: 0 0 * * *
 
 jobs:
   build:
